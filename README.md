@@ -21,7 +21,7 @@ git clone https://github.com/ant-6112/Dashboard.git
  cd Dashboard
 ```
 3. Configure the Settings:<br>
-`...Dashboard\Dashboard\Dashboard\settings.py` and Change the Connection to your Local MySQL Database
+`...Dashboard\Dashboard\Dashboard\settings.py` and Change the Connection to your Local MySQL Database 
 
 4. Execute these commands at the terminal:
 ```html
