@@ -12,17 +12,32 @@ Simple Django Project with User Login and Registration with a Main User Dashboar
 ## Installation 
 
 1. Clone this Repository:
+
 ```html
 git clone https://github.com/ant-6112/Dashboard.git
 ```
-2. Install Django and Change the Current Directory: 
+
+2. Install requirements.txt and Change the Current Directory: 
+
 ```html
  python -m pip install Django
+ pip install -r requirements.txt
  cd Dashboard
 ```
+
+3. Load Sample Data into SQL
+
+```html
+mysql -u <mysql-user> -p
+mysql> #Path to the SQL File
+mysql> exit;
+```
+
 3. Configure the Settings:<br>
+
 `...Dashboard\Dashboard\Dashboard\settings.py` and Change the Connection to your Local MySQL Database 
 ```html
+
 DATABASES = {
    'default': {
         'ENGINE': 'django.db.backends.mysql',
@@ -36,6 +51,7 @@ DATABASES = {
 ```
 
 4. Execute these commands at the terminal:
+
 ```html
 py manage.py makemigrations
 py manage.py migrate
