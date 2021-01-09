@@ -44,8 +44,8 @@ py manage.py runserver
 
 ## Login Information
 
-Admin Username: `Antrang`
-Admin Password: `ant12345`
+Admin Username: `Joker`
+Admin Password: `joke12345`
 
 
 
