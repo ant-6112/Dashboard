@@ -22,6 +22,18 @@ git clone https://github.com/ant-6112/Dashboard.git
 ```
 3. Configure the Settings:<br>
 `...Dashboard\Dashboard\Dashboard\settings.py` and Change the Connection to your Local MySQL Database 
+```html
+DATABASES = {
+   'default': {
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'new', 
+        'USER': 'root',
+        'PASSWORD': 'mysql',
+        'HOST': '127.0.0.1',
+        'PORT': '3306',
+    }
+}
+```
 
 4. Execute these commands at the terminal:
 ```html
@@ -35,7 +47,5 @@ py manage.py runserver
 Admin Username: `Antrang`
 Admin Password: `ant12345`
 
-User Username: `LightYagami`
-User Password: `light12345`
 
 
