@@ -25,15 +25,7 @@ git clone https://github.com/ant-6112/Dashboard.git
  cd Dashboard
 ```
 
-3. Load Sample Data into SQL
-
-```html
-mysql -u <mysql-user> -p
-mysql> #Path to the SQL File
-mysql> exit;
-```
-
-3. Configure the Settings:<br>
+4. Configure the Settings:<br>
 
 `...Dashboard\Dashboard\Dashboard\settings.py` and Change the Connection to your Local MySQL Database 
 ```html
@@ -50,11 +42,25 @@ DATABASES = {
 }
 ```
 
-4. Execute these commands at the terminal:
+5. Execute these commands at the terminal:
 
 ```html
 py manage.py makemigrations
 py manage.py migrate
+```
+
+3. Load Sample Data into SQL:
+In Command Line Run MySQL:
+```html
+mysql -u <mysql-user> -p
+mysql> use <Your-Database-Name-Where-You-Made-Migrations>;
+mysql> source <~~Absolute Path the the all_files.sql>
+mysql> exit;
+```
+
+5. Run this Command:
+
+```
 py manage.py runserver
 ```
 
@@ -63,5 +69,7 @@ py manage.py runserver
 Admin Username: `Joker`
 Admin Password: `joke12345`
 
+User Username: `LigtYagami`
+User Password; `light12345`
 
 
