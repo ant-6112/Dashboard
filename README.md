@@ -20,10 +20,9 @@ git clone https://github.com/ant-6112/Dashboard.git
  python -m pip install Django
  cd Dashboard
 ```
-4. Configure the Settings:<br>
+3. Configure the Settings:<br>
 `...Dashboard\Dashboard\Dashboard\settings.py` and Change the Connection to your Local MySQL Database
 
-5. Create a Admin Login:
 4. Execute these commands at the terminal:
 ```html
 py manage.py makemigrations
