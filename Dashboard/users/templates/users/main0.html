@@ -1,0 +1,34 @@
+{% load static %}
+<!DOCTYPE html>
+<htmL>
+    <head>
+        <link rel = "stylesheet" href = "{% static 'css/main0_C.css' %}">
+        <title>Dashboard</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    </head>
+    <body>
+        <h1 class="display-2">Dashboard</h1>
+        <hr>
+        <table class="Dash">
+            <thead>
+                <tr>
+                    <th><h1 class = "display-6">Username</h1></th>
+                    <th><h1 class = "display-6">E-Mail</h1></th>
+                    <th><h1 class = "display-6">Phone Number</h1></th>
+                    <th><h1 class = "display-6">Account Balance</h1></th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for dat in Profile %}
+                <tr>
+                    <td>{{dat.username}}</td>
+                    <td>{{dat.email}}</td>
+                    <td>{{dat.phone_number}}</td>
+                    <td>&#x20B9 {{dat.account_balance}}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </body>
+</htmL>
+    

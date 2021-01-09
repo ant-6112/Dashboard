@@ -1,0 +1,51 @@
+.Dash {
+    text-align: left;
+    width: 80%;
+    margin: 0 auto;
+    display: table;
+  }
+   /*3D transition of Cells*/
+  .Dash td:hover {
+    background-color: #e7e7e7;
+    color: #111312;
+    font-weight: bold;
+    box-shadow:#46ad8b  -1px 1px,#46ad8b -2px 2px,#46ad8b -3px 3px,#46ad8b -4px 4px,#46ad8b -5px 5px,#46ad8b -6px 6px;
+    transform: translate3d(6px, -6px, 0);
+    transition-delay: 0s;
+        transition-duration: 0.4s;
+        transition-property: all;
+    transition-timing-function: line;
+  }
+    /*Background of the Row when hovered over*/
+  .Dash tr:hover {
+      background-color: #464A52;
+   -webkit-box-shadow: 0 6px 6px -6px #0E1119;
+          -moz-box-shadow: 0 6px 6px -6px #0E1119;
+               box-shadow: 0 6px 6px -6px #0E1119;
+  }
+   /*Shadow of the Cells 3D transition*/
+  .Dash td {
+    font-weight: normal;
+    font-size: 1em;
+  -webkit-box-shadow: 0 2px 2px -2px #0E1119;
+     -moz-box-shadow: 0 2px 2px -2px #0E1119;
+          box-shadow: 0 2px 2px -2px #0E1119;
+  }
+  .Dash td, .Dash th {
+    padding-bottom: 2%;
+    padding-top: 2%;
+    padding-left:2%;  
+  }
+  .Dash th {
+    background-color: white;
+  }
+  .display-2 {
+      padding-left: 40px;
+  }
+  .lead {
+       padding-left: 40px;
+  }
+  .Dash h1 {
+    font-size: 30px;
+    text-align: left;
+  }

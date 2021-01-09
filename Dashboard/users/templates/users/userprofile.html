@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<htmL>
+    <head>
+        <title>Dashboard</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    </head>
+    <body>
+        <h1 class="display-2">Dashboard</h1>
+        <a style="position:absolute; top:29px; right:40px;font-size: 20px;" href="http://127.0.0.1:8000" class = "btn btn-primary mb value" >Home</a>
+        <hr>
+           <center><h1 class="display-2">Welcome, {{ request.user.first_name }}</h1>
+            <h1>Username: {{ request.user.username }}</h1>
+            <h1>Email: {{ request.user.email }}</h1>
+            {% for prof in Profile %}
+                {% if prof.username == request.user.username %}
+                    <h1>Phone Number: +91-{{ prof.phone_number }}</h1>
+                    <h1>Account Balance: &#x20B9 {{ prof.account_balance }}</h1>
+                {% endif %}
+            {% endfor %}
+        <h1><a class="btn btn-primary mb value" class="display-3" href="{% url 'users:logout' %}">Log Out</a></h1>
+        </center>
+    </body>
+</htmL>

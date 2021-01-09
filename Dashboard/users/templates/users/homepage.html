@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<htmL>
+    <head>
+        <title>Dashboard</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    </head>
+    <style>
+        #but {
+            display: block;
+            width: 100%;
+        }
+    </style>
+    <body>
+        <center>
+        <h1 class="display-2">Dashboard</h1>
+        <hr>
+        <h1 class = "display-5"><a id = "but" class="btn btn-primary btn-lg btn-block" href="{% url 'users:login'%}">User Login</a></h1></button>
+        <hr>
+        <h1 class = "display-5"><a id = "but" class="btn btn-primary btn-lg btn-block" href="http://127.0.0.1:8000/admin/login/?next=/admin/">Admin Login</a></h1></button>
+        <hr>
+        <h1 class = "display-5"><a id = "but" class="btn btn-primary btn-lg btn-block" href="http://127.0.0.1:8000/users/main">Main Dashboard</a></h1></button>
+        <hr>
+        </center>
+    </body>
+</htmL>

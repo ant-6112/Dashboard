@@ -1,0 +1,31 @@
+#floatingInput#j:hover {
+    background-color: #e7e7e7;
+    color: #111312;
+    font-weight: bold;
+    box-shadow:#ffffff  -1px 1px,#ffffff -2px 2px,#ffffff -3px 3px,#ffffff -4px 4px,#ffffff -5px 5px,#ffffff -6px 6px;
+    transform: translate3d(6px, -6px, 0);
+    transition-delay: 0s;
+        transition-duration: 0.4s;
+        transition-property: all;
+    transition-timing-function: line;
+}
+#floatingInput:hover {
+    background-color: #20ebbf;
+-webkit-box-shadow: 0 6px 6px -6px #0E1119;
+        -moz-box-shadow: 0 6px 6px -6px #0E1119;
+            box-shadow: 0 6px 6px -6px #0E1119;
+}
+#floatingInput,#i:hover {
+    font-weight: normal;
+    font-size: 1em;
+-webkit-box-shadow: 0 2px 2px -2px #0E1119;
+        -moz-box-shadow: 0 2px 2px -2px #0E1119;
+            box-shadow: 0 2px 2px -2px #0E1119;
+}
+
+#jam {
+    position:fixed; 
+    top:29px; 
+    right:40px; 
+    font-size: 20px;
+}
