@@ -54,7 +54,7 @@ In Command Line Run MySQL:
 ```html
 mysql -u <mysql-user> -p
 mysql> use <Your-Database-Name-Where-You-Made-Migrations>;
-mysql> source <~~Absolute Path the the all_files.sql>
+mysql> source <~~Absolute Path to all_files.sql>
 mysql> exit;
 ```
 
