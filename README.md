@@ -1,4 +1,4 @@
-# Dashboard - By Antrang Agrawal for ACM Web Recrutiments
+# Dashboard 
 Simple Django Project with User Login and Registration with a Main User Dashboard.
 
 ## Functionality:
