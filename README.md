@@ -49,7 +49,7 @@ py manage.py makemigrations
 py manage.py migrate
 ```
 
-3. Load Sample Data into SQL:
+3. Load Sample Data into SQL:<br>
 In Command Line Run MySQL:
 ```html
 mysql -u <mysql-user> -p
