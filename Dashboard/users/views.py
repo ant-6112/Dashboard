@@ -34,7 +34,6 @@ def register_user(request):
             profile.save()
             user.save()
             login(request, user)
-            messages.success(request, "Registration successful.")
             return redirect("users:homepage")
         messages.error(
             request, "Unsuccessful registration. Invalid information.")

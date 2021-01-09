@@ -21,6 +21,8 @@ git clone https://github.com/ant-6112/Dashboard.git
 
 ```html
  python -m pip install Django
+ pip install mysqlclient
+ pip install django-crispy-forms
  pip install -r requirements.txt
  cd Dashboard
 ```
@@ -33,9 +35,9 @@ git clone https://github.com/ant-6112/Dashboard.git
 DATABASES = {
    'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'new', 
-        'USER': 'root',
-        'PASSWORD': 'mysql',
+        'NAME': 'new', <!--- Change this to your Database Name--->
+        'USER': 'root', <!--- Change to your MySQL username--->
+        'PASSWORD': 'mysql', <!---Change to your MySQL Password--->
         'HOST': '127.0.0.1',
         'PORT': '3306',
     }
@@ -50,11 +52,11 @@ py manage.py migrate
 ```
 
 3. Load Sample Data into SQL:<br>
-In Command Line Run MySQL:
+* In Command Line Run MySQL:
 ```html
 mysql -u <mysql-user> -p
 mysql> use <Your-Database-Name-Where-You-Made-Migrations>;
-mysql> source <~~Absolute Path to all_files.sql>
+mysql> source <Absolute-Path-to-all_files.sql>
 mysql> exit;
 ```
 
