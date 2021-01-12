@@ -12,14 +12,21 @@
     </style>
     <body>
         <center>
-        <h1 class="display-2">Dashboard</h1>
-        <hr>
+        <nav class="navbar navbar-dark bg-dark">
+            <h1 class="display-2" style ="color:cyan">Dashboard</h1>
+            <h1 style="position:absolute; top:29px; right:300px;font-size: 20px;" class = "display-5"><a style ="color:cyan" id = "but" class="btn btn-dark btn-lg btn-block" href="http://127.0.0.1:8000/admin/login/?next=/admin/">Admin Login</a></h1></button>
+            <h1 style="position:absolute; top:29px; right:150px;font-size: 20px;" class = "display-5"><a style ="color:cyan" id = "but" class="btn btn-dark btn-lg btn-block" href="{% url 'users:login'%}">User Login</a></h1></button>
+            <a style="color:cyan;position:absolute; top:29px; right:40px;font-size: 20px;" href="http://127.0.0.1:8000" class = "btn btn-dark btn-lg btn-block" >Home</a>
+            <h1 style="position:absolute; top:29px; right:470px;font-size: 20px;" class = "display-5"><a style ="color:cyan" id = "but" class="btn btn-dark btn-lg btn-block" href="http://127.0.0.1:8000/users/main">Main Dashboard</a></h1></button>
+        </nav>
+        
+    <!---    <hr>
         <h1 class = "display-5"><a id = "but" class="btn btn-primary btn-lg btn-block" href="{% url 'users:login'%}">User Login</a></h1></button>
         <hr>
         <h1 class = "display-5"><a id = "but" class="btn btn-primary btn-lg btn-block" href="http://127.0.0.1:8000/admin/login/?next=/admin/">Admin Login</a></h1></button>
         <hr>
         <h1 class = "display-5"><a id = "but" class="btn btn-primary btn-lg btn-block" href="http://127.0.0.1:8000/users/main">Main Dashboard</a></h1></button>
         <hr>
-        </center>
+        </center> --->
     </body>
 </htmL>
