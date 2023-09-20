@@ -1,5 +1,5 @@
 # Dashboard 
-Django Project with User Login and Registration with a Main User Dashboard for Employees Tracking
+Django Project with User Login and Registration with a Main User Dashboard for Employees Tracking.
 
 ## Functionality:
 * Log in via Username and Password
